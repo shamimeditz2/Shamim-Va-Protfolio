@@ -184,19 +184,14 @@ export const Hero: React.FC<HeroProps> = ({ onOpenConsultation }) => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
           >
-            {/* Status Pill Badge */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/90 border border-cyan-400/40 shadow-[0_0_15px_rgba(0,255,255,0.25)] mb-6 backdrop-blur-md">
-              <span className="relative flex h-2.5 w-2.5">
+            {/* Status Pill Badge (Compact) */}
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900/90 border border-cyan-400/40 shadow-[0_0_12px_rgba(0,255,255,0.2)] mb-5 backdrop-blur-md">
+              <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-cyan-500"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-cyan-400"></span>
               </span>
-              <span className="text-xs font-mono font-bold tracking-wider text-cyan-300 uppercase">
+              <span className="text-[11px] sm:text-xs font-mono font-semibold tracking-wide text-cyan-300 uppercase">
                 {HERO_DATA.availability}
-              </span>
-              <span className="text-slate-600">|</span>
-              <span className="text-xs font-medium text-slate-400 flex items-center gap-1">
-                <Zap className="w-3 h-3 text-lime-400 fill-lime-400" />
-                100% Job Success
               </span>
             </div>
 
