@@ -1,0 +1,166 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+
+  .font-mono-code {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Clean Typography (Normal, Crisp & Legible) */
+.text-glow-cyan {
+  color: #22d3ee;
+}
+
+.text-glow-lime {
+  color: #a3e635;
+}
+
+.text-3d-extruded {
+  /* Normal clean text styling without 3D extrusion */
+  color: #22d3ee;
+}
+
+.text-3d-extruded-lime {
+  /* Normal clean text styling without 3D extrusion */
+  color: #a3e635;
+}
+
+/* Glassmorphism & 3D Materials */
+.glass-panel-3d {
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.75) 0%, rgba(8, 14, 28, 0.85) 100%);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.8),
+              inset 0 1px 1px 0 rgba(255, 255, 255, 0.15),
+              inset 0 -1px 2px 0 rgba(0, 255, 255, 0.1);
+}
+
+.glass-panel-hover {
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-panel-hover:hover {
+  border-color: rgba(0, 255, 255, 0.5);
+  box-shadow: 0 25px 60px -10px rgba(0, 255, 255, 0.2),
+              0 0 30px -5px rgba(57, 255, 20, 0.15),
+              inset 0 1px 2px 0 rgba(255, 255, 255, 0.25);
+  transform: translateY(-4px);
+}
+
+/* 3D Glossy Buttons */
+.btn-3d-neon {
+  background: linear-gradient(180deg, #00FFFF 0%, #00b4d8 50%, #0077b6 100%);
+  box-shadow: 0 4px 0 #005f73,
+              0 10px 25px rgba(0, 255, 255, 0.4),
+              inset 0 1px 2px rgba(255, 255, 255, 0.6);
+  transition: all 0.15s ease-out;
+}
+
+.btn-3d-neon:hover {
+  box-shadow: 0 6px 0 #005f73,
+              0 14px 35px rgba(0, 255, 255, 0.6),
+              inset 0 1px 3px rgba(255, 255, 255, 0.8);
+  transform: translateY(-2px);
+}
+
+.btn-3d-neon:active {
+  box-shadow: 0 1px 0 #005f73,
+              0 4px 15px rgba(0, 255, 255, 0.5);
+  transform: translateY(3px);
+}
+
+.btn-3d-lime {
+  background: linear-gradient(180deg, #39FF14 0%, #22c55e 50%, #15803d 100%);
+  box-shadow: 0 4px 0 #14532d,
+              0 10px 25px rgba(57, 255, 20, 0.4),
+              inset 0 1px 2px rgba(255, 255, 255, 0.6);
+  transition: all 0.15s ease-out;
+}
+
+.btn-3d-lime:hover {
+  box-shadow: 0 6px 0 #14532d,
+              0 14px 35px rgba(57, 255, 20, 0.6),
+              inset 0 1px 3px rgba(255, 255, 255, 0.8);
+  transform: translateY(-2px);
+}
+
+/* Cyber Grid Background */
+.cyber-grid-bg {
+  background-image: 
+    linear-gradient(to right, rgba(0, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.cyber-dot-bg {
+  background-image: radial-gradient(rgba(0, 255, 255, 0.15) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Metallic badge styling */
+.metallic-badge {
+  background: linear-gradient(145deg, #1e293b, #0f172a);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6),
+              -1px -1px 3px rgba(255, 255, 255, 0.08),
+              inset 0 1px 1px rgba(255, 255, 255, 0.2);
+}
+
+/* Premium Text Shimmer Animations */
+@keyframes textShimmer {
+  0% {
+    background-position: 200% center;
+  }
+  100% {
+    background-position: -200% center;
+  }
+}
+
+.animate-shimmer-cyan {
+  background: linear-gradient(
+    90deg, 
+    #06b6d4 0%, 
+    #67e8f9 20%, 
+    #ffffff 45%, 
+    #a5f3fc 65%, 
+    #06b6d4 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textShimmer 4.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.animate-shimmer-lime {
+  background: linear-gradient(
+    90deg, 
+    #65a30d 0%, 
+    #84cc16 20%, 
+    #f7fee7 45%, 
+    #bef264 65%, 
+    #65a30d 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textShimmer 4.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  animation-delay: 1.2s;
+}
+
+.aurora-glow-cyan {
+  text-shadow: 0 0 25px rgba(6, 182, 212, 0.55), 0 0 50px rgba(6, 182, 212, 0.2);
+}
+
+.aurora-glow-lime {
+  text-shadow: 0 0 25px rgba(132, 204, 22, 0.55), 0 0 50px rgba(132, 204, 22, 0.2);
+}
+

@@ -1,0 +1,6 @@
+{
+  "name": "Shamim's VA Services",
+  "description": "3D animated portfolio for Shamim's Virtual Assistant Services specializing in E-commerce Management and Social Media Operations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
